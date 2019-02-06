@@ -14,7 +14,7 @@ int main() {
 	map <int, bool> numIfPresent;
 
 	// insert the elements into map
-	for (int i = 0; i < n; i++) {
+	for (size_t i = 0; i < n; i++) {
 		numIfPresent[listOfNumbers[i]] = true;
 	}
 
@@ -22,7 +22,7 @@ int main() {
 	int count = 0;
 
 	// check out each element in O(n) time
-	for (int i = 0; i < n; i++) {
+	for (size_t i = 0; i < n; i++) {
 		int toFindNum = k - listOfNumbers[i];
 		if (numIfPresent[toFindNum]) {
 			count += 1;

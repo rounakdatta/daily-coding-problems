@@ -1,0 +1,7 @@
+# don't take my binaries
+*
+!/**/
+!*.*
+*.exe
+*.out
+*.out
