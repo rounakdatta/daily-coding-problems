@@ -1,10 +1,20 @@
 #include <iostream>
 using namespace std;
 
-void findWindowGreatest(int *array, int n, int k) {
+void findWindowGreatest(int array[], int n, int k) {
 
-    for (int i = 0; i < n; i++) {
-        
+    int j, max;  
+  
+    for (int i = 0; i <= n - k; i++)  
+    {  
+        max = array[i];  
+  
+        for (j = 1; j < k; j++)  
+        {  
+            if (array[i + j] > max)  
+                max = array[i + j];  
+        }  
+        cout << max << " ";  
     }
 
 }
