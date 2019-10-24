@@ -2,9 +2,10 @@
 using namespace std;
 
 void swap(int *a, int *b) {
-    *a = *a ^ *b;
-    *b = *a ^ *b;
-    *a = *a ^ *b;
+    int temp;
+   temp=*a;
+   *a=*b;
+   *b=temp;
 }
 
 int separatePosNeg(int array[], int mySize) {
