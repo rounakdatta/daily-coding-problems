@@ -1,9 +1,15 @@
 package main
 
+
+
 import (
-	foo "github.com/rounakdatta/daily-coding-problems"
+ 	"fmt"
+
+	"github.com/rounakdatta/daily-coding-problems/one"
 )
 
 func main() {
-	foo.one()
+	fmt.Println("hey jude")
+	foo := one.GiveMeGuitar()
+	fmt.Println(foo)
 }

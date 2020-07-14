@@ -1,9 +1,5 @@
 package one
 
-import (
-	"fmt"
-)
-
-func main() {
-	fmt.Println("Hello")
+func GiveMeGuitar() string {
+	return "Guitar"
 }
